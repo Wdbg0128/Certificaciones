@@ -1,0 +1,204 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* reporte ht general*/
+body {
+  position: relative;
+  border: solid;
+  border-color: black;
+  /* border-color: black; */
+  width: 18cm;
+  height: 26.7cm;
+
+  color: #555555;
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+  font-family: SourceSansPro;
+}
+
+/*fin  */
+
+/* Cabecera */
+
+#logo {
+  float: left;
+  margin-top: 8px;
+  border-right: black solid 2px;
+}
+
+#logo img {
+  height: 75px;
+}
+
+#logo_derecho {
+  float: right;
+  margin-right: 3px;
+  margin-top: 5px;
+}
+
+#logo_derecho img {
+  margin-top: 5px;
+}
+
+
+#tabla1 {
+  color: black;
+  border-color: black;
+  border: solid;
+}
+
+#tabla_pdf {
+  text-align: center;
+  margin-left: 115px;
+}
+
+#cabecera {
+  position: relative;
+  bottom: 0cm;
+  margin-top: 20px;
+  left: 0cm;
+  right: 0cm;
+  height: 2cm;
+  text-align: center;
+  line-height: 35px;
+}
+
+#cabecera img {
+  width: 680px;
+}
+
+#encabezado {
+  text-align: center;
+}
+
+/* Fin Cabecera */
+
+/* TEXTOS */
+
+h1 {
+  text-align: center;
+  border-color: black;
+  border-style: solid;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+h1#producto {
+  font-size: 18px;
+}
+
+#descripcion p {
+  text-align: center;
+  text-align: justify;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 3px;
+  font-size: smaller;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+h5 {
+  border-color: black;
+  border-style: solid;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+h2 {
+  text-align: center;
+  /* border-color: black;
+    border-style: solid;
+    border-bottom-style: solid; */
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+#unidad {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+#valor {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: blue;
+}
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#p {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#parrafo {
+  text-align: center;
+}
+
+/* fin textos */
+
+/* CUERPO */
+
+#logo_documento {
+  border-width: 10px;
+}
+
+#logo_render {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+#plano img {
+  margin-top: 30px;
+  height: 200px;
+  width: 430px;
+  text-align: center;
+}
+
+#logo_render img {
+  margin-top: 30px;
+  height: 200px;
+  width: 430px;
+}
+
+div#cuerpo {
+  margin-left: 15px;
+}
+
+/* FIN CUERPO */
+
+/* PIE */
+#pie {
+  position: fixed;
+  bottom: 0cm;
+  margin-bottom: 80px;
+  left: 0cm;
+  right: 0cm;
+  height: 2cm;
+  text-align: center;
+  line-height: 35px;
+}
+
+#pie img {
+  width: 650px;
+}
+
+/* FIN PIE */

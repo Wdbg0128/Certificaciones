@@ -1,0 +1,203 @@
+#box1 {
+width: 100%;
+height: 100%;
+margin: 0px;
+align-items: center;
+display: flex;
+justify-content: center;
+}
+/* Formateamos el label que servirá de contenedor */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+  /* Ocultamos el checkbox html */
+  .switch input {
+    display:none;
+  }
+
+  /* Formateamos la caja del interruptor sobre la cual se deslizará la perilla de control o slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(206, 162, 162);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  /* Pintamos la perilla de control o slider usando el selector before */
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(226, 122, 122);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  /* Cambiamos el color de fondo cuando el checkbox esta activado */
+  input:checked + .slider {
+    background-color: rgb(147, 211, 147);
+  }
+
+  /* Deslizamos el slider a la derecha cuando el checkbox esta activado */
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: rgb(39, 174, 96);
+  }
+
+  /* Aplicamos efecto de bordes redondeados en slider y en el fondo del slider */
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  img#button-action:hover {
+
+    transform: translateY(-15px);
+    box-shadow: 0 12 16px rgba(0,0,0,0.2);
+        -webkit-transform:scale(1.1);transform:scale(1.1);
+         transition:all .5s ease-in-out;
+      }
+img#button-action {
+    border-radius: 8px;
+    margin-block-start: 4%;
+}
+img#button-action:active {
+
+    transform: translateY(-15px);
+    box-shadow: 0 12 16px rgba(0,0,0,0.2);
+        -webkit-transform:scale(0.5);transform:scale(0.5);
+         transition:all .4s ease-in-out;
+      }
+img#button-back:active{
+    transform: translateY(-15px);
+    box-shadow: 0 12 16px rgba(0,0,0,0.2);
+        -webkit-transform:scale(0.5);transform:scale(0.5);
+         transition:all .4s ease-in-out;
+}
+img#button-back:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12 16px rgba(0,0,0,0.2);
+    -webkit-transform:scale(1.2);transform:scale(1.2);
+     transition:all .5s ease-in-out;
+    }
+    img#button-back{
+        margin-right: 2px;
+    }
+    #button{
+        border-top: 0px;
+}
+tr#narchivos{
+    background-color: #eef07c;
+}
+tr#tr:hover{
+    cursor: pointer;
+    background-color: #86c4e8;
+}
+tr#trV{
+    cursor: pointer;
+    background-color: #f57777;
+}
+tr#trR{
+    cursor: pointer;
+    background-color: #5b5c22;
+}
+tr#trXV{
+    cursor: pointer;
+    background-color: #f3c46c;
+}
+tr#tr:active{
+    background-color: #27719c;
+}
+#contenido{
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-block-end: 0%;
+    margin-block-start: 2%;
+}
+#contenido1{
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    margin-block-end: 2.5%;
+}
+/* login */
+body {
+    background-color: white;
+}
+
+#loginbox {
+    margin-top: 30px;
+}
+
+#loginbox > div:first-child {
+    padding-bottom: 10px;
+}
+
+.iconmelon {
+    display: block;
+    margin: auto;
+}
+
+#form > div {
+    margin-bottom: 25px;
+}
+
+#form > div:last-child {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.panel {
+    background-color: transparent;
+}
+
+.panel-body {
+    padding-top: 30px;
+    background-color: rgba(2555,255,255,.3);
+}
+
+#particles {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: -2;
+}
+
+.iconmelon,
+.im {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: block;
+  fill: #525151;
+}
+
+.iconmelon:after,
+.im:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
