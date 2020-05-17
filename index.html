@@ -1,0 +1,60 @@
+<? php
+
+/ **
+ * Laravel: un marco PHP para artesanos web
+ * *
+ * @package Laravel
+ * @autor Taylor Otwell <taylor@laravel.com>
+ * /
+
+define ( 'LARAVEL_START' , microtime ( verdadero ));
+
+/ *
+| ------------------------------------------------- -------------------------
+El | Registrar el cargador automático
+| ------------------------------------------------- -------------------------
+El |
+El | Composer proporciona un cargador de clases conveniente y generado automáticamente para
+El | Nuestra aplicación. ¡Solo tenemos que utilizarlo! Simplemente lo necesitaremos
+El | en el script aquí para que no tengamos que preocuparnos por el manual
+El | cargando cualquiera de nuestras clases más adelante. Se siente genial relajarse.
+El |
+* /
+
+requiere __DIR__. '/../vendor/autoload.php' ;
+
+/ *
+| ------------------------------------------------- -------------------------
+El | Enciende las luces
+| ------------------------------------------------- -------------------------
+El |
+El | Necesitamos iluminar el desarrollo de PHP, así que encienda las luces.
+El | Esto inicia el marco y lo prepara para su uso, luego se
+El | cargará esta aplicación para que podamos ejecutarla y enviar
+El | las respuestas vuelven al navegador y deleitan a nuestros usuarios.
+El |
+* /
+
+$ app = require_once __DIR__. '/../bootstrap/app.php' ;
+
+/ *
+| ------------------------------------------------- -------------------------
+El | Ejecute la aplicación
+| ------------------------------------------------- -------------------------
+El |
+El | Una vez que tenemos la aplicación, podemos manejar la solicitud entrante
+El | a través del núcleo y enviar la respuesta asociada de nuevo a
+El | el navegador del cliente que les permite disfrutar de la creatividad
+El | y maravillosa aplicación que hemos preparado para ellos.
+El |
+* /
+
+$ kernel = $ app -> make ( Illuminate \ Contracts \ Http \ Kernel :: class);
+
+$ respuesta = $ kernel -> handle (
+    $ request = Illuminate \ Http \ Request :: capture ()
+);
+
+$ respuesta -> send ();
+
+$ kernel -> terminar ( $ solicitud , $ respuesta );
